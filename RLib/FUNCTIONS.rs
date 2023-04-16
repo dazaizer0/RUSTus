@@ -37,3 +37,30 @@ fn cout_numbers_range(nmin: u32,nmax: u32)
         println!("{}", i);
     }
 }
+
+// bool
+fn main()
+{
+
+    cout_numbers_range(1, 5);
+}
+
+fn cout_numbers_range(nmin: u32,nmax: u32)
+{
+
+    for i in nmin..nmax
+    {
+
+        if is_even(i)
+        {
+
+            println!("{}", i);
+        }
+    }
+}
+
+fn is_even(num: u32) -> bool
+{
+
+    return num % 2 == 0;
+}
