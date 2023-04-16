@@ -16,6 +16,9 @@ fn main()
     // ___
     
     println!("Const_Number: {}, {}", NUMBER1, NUMBER2);
+
+    let items = vec!["PHONE", "SWITCH", "COMPUTER"];
+    println!("ITEM: {}", items[0]);
 }
 
 const NUMBER2: i32 = 4;
