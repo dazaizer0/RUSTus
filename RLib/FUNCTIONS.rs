@@ -1,3 +1,4 @@
+// int
 fn main()
 {
 
@@ -18,4 +19,21 @@ fn sum_numbers(numbers: &[i32]) -> i32
         sum += number;
     }
     sum
+}
+
+// void
+fn main()
+{
+
+    cout_numbers_range(1, 5);
+}
+
+fn cout_numbers_range(nmin: u32,nmax: u32)
+{
+
+    for i in nmin..nmax
+    {
+
+        println!("{}", i);
+    }
 }
