@@ -1,16 +1,22 @@
-struct Pokemon
+struct Color
 {
 
-    Charizard: u8,
-    Pikachu: u8,
-    Squirtle: u8
+    RED: u8,
+    GREEN: u8,
+    BLUE: u8
 }
 
 fn main()
 {
 
-    let mut POKEMON = Pokemon {Charizard: 1, Pikachu: 5, Squirtle: 3};
-    POKEMON.Pikachu = 2;
+    let Blue = Color {RED: 0, GREEN: 0, BLUE: 255};
+    // Blue.RED = 5; with MUT
 
-    println!("{}, {}, {}", POKEMON.Charizard, POKEMON.Pikachu, POKEMON.Squirtle);
+    PRINT_COLOR(&Blue);
+}
+
+fn PRINT_COLOR(c: &Color)
+{
+
+    println!("R: {}, G: {}, B: {}", c.RED, c.GREEN, c.BLUE);
 }
